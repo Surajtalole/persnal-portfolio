@@ -6,10 +6,10 @@ export const Bio = {
     "Programmer",
   ],
   description:
-    "I am a highly motivated and adaptable individual with a strong desire to embrace new challenges. My passion for learning drives me to consistently deliver exceptional results. With a positive attitude and a growth-oriented mindset, I am committed to making valuable contributions and achieving outstanding success.",
+    "Full Stack Developer (MERN Stack) with 1.5 years of experience in delivering production-ready web and mobile applications. Skilled in React.js, React Native, Node.js, Express.js, SQL, and MongoDB with proven expertise in API optimization, responsive UI development, and app store publishing. Recognized for delivering scalable solutions that improve system efficiency in Agile environments.",
   github: "https://github.com/Surajtalole",
   resume:
-    "https://drive.google.com/file/d/1SGny572Y6MBvL3S8Tvep8QIG6qndtd2v/view?usp=sharing",
+    "https://drive.google.com/file/d/1_KPHMjfIqLgZg9lIfuzVBsY1sQzd5EqM/view?usp=drive_link",
   linkedin: "https://www.linkedin.com/in/surajtalole/",
   insta: "https://www.instagram.com/suraj_talole/",
  
@@ -19,11 +19,11 @@ export const skills = [
   {
     title: "Frontend",
     skills: [
-      {
-        name: "React Js",
-        image:
-          "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K",
-      },
+      // {
+      //   name: "React Js",
+      //   image:
+      //     "https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_960_720.png",
+      // },
       // {
       //   name: "Redux",
       //   image:
@@ -33,6 +33,12 @@ export const skills = [
         name: "Next Js",
         image:
           "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACTklEQVR4Ab1XAaQqURB9DyohSykREpRIQSAlBCoECKUFCSRCBBEAaSEABQEoCIEASCwAUICALgCo83do0//9v819XX845O7VnDkzOzP7JWGaBd3C3IJpQVjAHeJ+Rs9a97vKLGrBsB1KgMhEP3FMUUwt4ENMfxr1yQIU4SSjRkbeOZtERmHk6pXQVDlnkHh9S+QLTm1hkiz4n/gzFQuny9FoFLquE+i34x+n02k0m00UCoV3BIzn3MMJrVYLtp1OJ0cS/X4f5/MZhmG8IyDsWtDfEaDIn2232/3zbrvdxuFwwGg04qRBt+VnETBNE0IIkE2n07/erdfrWK/X6Ha73Hb9ZXII3G43ivy3dNRqtZe7lUoFs9mM6oBDwCQCgquALT1FT3a5XF7qIZ/PYzgcolqtcggIIgBZAgRKB6lCRalp2uM8k8mAVMrlchwC+DEBipycE4n5fP44j8ViKJVKSCaTbAJCpgaez4vFIsjoWa/XA50FAgEkEgmEw2F2CkxZBZ5Br5tt1ITcbjd8Ph88Hg+7CBefECCsVitS4aVJcV9D/VMCVITk/Hq9YrPZyBBo2a1YMGvAcQYcj0cCtWMugcdYNhjDiBrP25mx3++x3W6RzWZZ8isfxzQLlsslJpMJpYY5jhkqcOH1ejEYDDAej9FoNOByuZxGsfqVzC7KTqcDSkkqleKsZOqX0mAwiHK5DGrJfr+fs5SqX8sjkQji8ThCoRC+v78Za7l6JagrUh3YkUuZpqgwDaecc9VYSDoV5Fg+at7n+eLN57kuE/EvzHr/Kvs31aYAAAAASUVORK5CYII=",
+      },
+       // },
+      {
+        name: "React Native",
+        image:
+          "https://4409803.fs1.hubspotusercontent-na1.net/hubfs/4409803/react-native%20%281%29.png",
       },
       {
         name: "HTML5",
@@ -53,6 +59,11 @@ export const skills = [
         image:
           "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png",
       },
+       {
+        name: "TypeScript",
+        image:
+          "https://www.svgrepo.com/show/374144/typescript.svg",
+      },
       {
         name: "Bootstrap",
         image:
@@ -62,6 +73,11 @@ export const skills = [
         name: "React JS",
         image:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbAmafdPNr9fd0KC0Z98WYEC7Wl1wYlPVf-A&s"    
+      },
+      {
+        name: "Electron",
+        image:
+        "https://images.seeklogo.com/logo-png/46/1/electron-logo-png_seeklogo-468387.png"    
       },
       {
         name: "Wordpress",
@@ -138,13 +154,73 @@ export const skills = [
         image:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfZYisM7kdYMiF96V0d4Y5QEtAOopmWWCsaw&s"
       },
+       {
+        name: "Google Play Store",
+        image:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb5LOPUgzjbz_m4aVulC-GU5zu-30HBdYnAg&s"
+      },
+       {
+        name: "Apple App Store,",
+        image:
+        "https://developer.apple.com/assets/elements/icons/app-store-s/app-store-s-256x256_2x.png"
+      },
     ],
   },
 ];
 
 export const experiences = [
-  {
+   {
     id: 0,
+    img: "https://digitalcreations.co.in/wp-content/uploads/2021/07/Digital-Creations-I.T.-Support-Servives-Logo-Favicon-1.jpg",
+    role: "Full Stack Developer",
+    company: "Digital Creations",
+    date: "Dec 2024 - Present",
+    desc: "Integrated REST APIs and developed responsive, cross-platform UIs for web and mobile applications, improving feature delivery speed by 30% and reducing UI-related bugs by 25%.Optimized front-end performance and scalability across multiple platforms, resulting in 20% faster load times and enhancing overall user engagement by 15%.Independently published 2 mobile apps on Google Play Store and Apple App Store, ensuring compliance with guidelines and enabling timely product launches.",
+    skills: [
+      "HTML5",
+      "CSS",
+      "Tailwind CSS",
+      "JavaScript",
+      "TypeScript",
+      "React.js",
+      "Next.js",
+      "React Native",
+      "Node Js",
+      "Express js",
+      "MongoDB",
+      "Figma",
+      "Git & GitHub"
+      
+     
+    ],
+  },
+  {
+    id: 1,
+    img: "https://media.licdn.com/dms/image/v2/D560BAQEGGS6VpW5YMQ/company-logo_200_200/company-logo_200_200/0/1733820408321/yahshua_software_limited_logo?e=2147483647&v=beta&t=UjOjBiX1nVDFM3o5RiRVxshNv_pqwSr-StoVCq2qX1g",
+    role: "Full Stack Developer",
+    company: "Yahshua Marketing Limited",
+    date: "Aug 2024 - Dec 2024",
+    desc: "Engineered full-stack applications with React.js, React Native, Node.js,Express.js, and MongoDB, improving feature delivery by 35% .Streamlined backend API architecture, reducing response time by 40% and boosting customer satisfaction by 25%.",
+   skills: [
+      "HTML5",
+      "CSS",
+      "Tailwind CSS",
+      "JavaScript",
+      "TypeScript",
+      "React.js",
+      "Next.js",
+      "React Native",
+      "Node Js",
+      "Express js",
+      "MongoDB",
+      "Figma",
+      "Git & GitHub"
+      
+     
+    ],
+  },
+  {
+    id: 2,
     img: "https://variantspark.com/images/portfolio/varientspark.jpg",
     role: "React Js Intern",
     company: "Variant Spark",
@@ -165,7 +241,7 @@ export const experiences = [
     ],
   },
   {
-    id: 1,
+    id: 3,
     img: "https://suvidhafoundationedutech.org/img/SuvidhaLogo.png",
     role: "Frontend Developer Intern",
     company: "Suvidha Foundation",
@@ -215,24 +291,55 @@ export const education = [
 export const projects = [
   {
     id: 9,
-    title: "Ecommerce",
-    date: "Jun 2024 - July 2024",
+    title: "Etable - Restro Manager|Dine-in & Booking",
+    date: "March 2024 - Present",
     description:
-      "Developed a full-featured MERN stack e-commerce application with an integrated admin panel for seamless management.. \nAdmin Credentials: # Email: admin@gmail.com #Password- 1234",
+      "The Cloud-Based Software for your restaurants with full Management and Operational Control.Real-time Order Management, Accessible Anytime, Anywhere, on Any Device – with Seamless Third-Party Integrations and Instant Updates via Email, SMS, and In-App Notifications.",
     image:
-      "https://github.com/Surajtalole/img/blob/main/ecommerce.png?raw=true",
+      "https://github.com/Surajtalole/img/blob/main/Screenshot%202025-08-18%20214007.png?raw=true",
     tags: [
-      "Bootstrap",
+      
       "React.Js",
-      "Node.Js",
-      "Express.Js",
-      "Mongodb",
-      "Braintree",
+      "React Native",
+      "Laravel",
+      "MySql",
+      
+     
+      
      
     ],
     category: "mern stack",
     github: "https://github.com/Surajtalole/MERN-Ecommerce-WebApp",
     webapp: "https://vocal-brigadeiros-3b4d3d.netlify.app/",
+  },
+   {
+    id: 10,
+    title: "Bridge - Sports Academy Management App ",
+    date: "Dec 2024 - March 2025",
+    description:
+      "Bridge is the ultimate platform connecting students with top sports academies. Whether you're an aspiring athlete or a coach looking for talent, Bridge helps you discover training programs, track progress, and connect with experts to enhance your sports journey.",
+
+
+    image:
+      "https://github.com/Surajtalole/img/blob/main/Screenshot%202025-08-27%20211732.png?raw=true",
+    tags: [
+      
+      
+      "React Native",
+      "Node Js",
+      "Expres js",
+      "Mongo DB",
+      "HTML5",
+      "Tailwind CSS",
+      "Figma"
+      
+     
+      
+     
+    ],
+    category: "mern stack",
+    // github: "https://github.com/Surajtalole/MERN-Ecommerce-WebApp",
+    webapp: "https://play.google.com/store/apps/details?id=com.BridgeSolution.Bridge",
   },
   {
     id: 0,
@@ -273,48 +380,7 @@ export const projects = [
       },
     ],
   },
-
-  {
-    id: 1,
-    title: "Designtemplate",
-    date: "Aug 2023 - Dec 2023",
-    description:
-    "We developed a comprehensive solution encompassing a custom frontend website, a robust backend system, and a scalable cloud architecture. This holistic approach ensures a seamless user experience for both DesignTemplate.io and their customers.",
-    image:
-      "https://github.com/Surajtalole/img/blob/main/Design%20templete.png?raw=true",
-    tags: ["React Js", "Next Js","JavaScript","Tailwind CSS","Node Js","Firebase","Figma"],
-    category: "next js",
-    github: "https://github.com/Surajtalole",
-    webapp: "https://designtemplate.io/",
-    member: [
-      {
-        name: "Devsharan Singh ",
-        img: "https://eamtools.com/images/about/Dev.png",
-        linkedin: "https://www.linkedin.com/in/devsharan/",
-        
-      },
-     
-      {
-        name: "Talha Shaikh",
-        img: "https://eamtools.com/images/about/Talha.png",
-        linkedin: "https://www.linkedin.com/in/shaikh52talha/",
-        
-      },
-      {
-        name: "Suraj Talole ",
-        img: "http://localhost:3000/static/media/HeroImage.a5e2295f16626dd716d2.jpg",
-        linkedin: "https://www.linkedin.com/in/surajtalole/",
-        
-      },
-      {
-        name: "Dhanashri Sabale ",
-        img: "https://avatars.githubusercontent.com/u/125346747?s=100&v=4",
-        linkedin: "https://www.linkedin.com/in/dhanashri-sabale-13273817a/",
-        
-      },
-    ],
-  },
-  {
+ {
     id: 2,
     title: "Variant Spark",
     date: "Dec 2023",
@@ -355,6 +421,47 @@ export const projects = [
     ],
   },
   {
+    id: 1,
+    title: "Designtemplate",
+    date: "Aug 2023 - Dec 2023",
+    description:
+    "We developed a comprehensive solution encompassing a custom frontend website, a robust backend system, and a scalable cloud architecture. This holistic approach ensures a seamless user experience for both DesignTemplate.io and their customers.",
+    image:
+      "https://github.com/Surajtalole/img/blob/main/Design%20templete.png?raw=true",
+    tags: ["React Js", "Next Js","JavaScript","Tailwind CSS","Node Js","Firebase","Figma"],
+    category: "next js",
+    github: "https://github.com/Surajtalole",
+    webapp: "https://designtemplate.io/",
+    member: [
+      {
+        name: "Devsharan Singh ",
+        img: "https://eamtools.com/images/about/Dev.png",
+        linkedin: "https://www.linkedin.com/in/devsharan/",
+        
+      },
+     
+      {
+        name: "Talha Shaikh",
+        img: "https://eamtools.com/images/about/Talha.png",
+        linkedin: "https://www.linkedin.com/in/shaikh52talha/",
+        
+      },
+      {
+        name: "Suraj Talole ",
+        img: "http://localhost:3000/static/media/HeroImage.a5e2295f16626dd716d2.jpg",
+        linkedin: "https://www.linkedin.com/in/surajtalole/",
+        
+      },
+      {
+        name: "Dhanashri Sabale ",
+        img: "https://avatars.githubusercontent.com/u/125346747?s=100&v=4",
+        linkedin: "https://www.linkedin.com/in/dhanashri-sabale-13273817a/",
+        
+      },
+    ],
+  },
+ 
+  {
     id: 3,
     title: "Winone",
     date: "jun 2023- Aug 2023",
@@ -394,61 +501,61 @@ export const projects = [
       },
     ],
   },
-  {
-    id: 4,
-    title: "Crypto Guru",
-    date: "jun 2024- feb 2024",
-    description:
-    "I developed a dynamic cryptocurrency web application leveraging React and Rapid API, enabling real-time tracking of cryptocurrency prices and market trends. This project enhanced my skills in API integration and state management within React.",
-    image:
-      "https://github.com/Surajtalole/img/blob/main/crypto.png?raw=true",
-    tags: ["React Js", "Javascript","CSS"],
-    category: "react js",
-    github: "https://github.com/Surajtalole/Crypto-Guru",
+  // {
+  //   id: 4,
+  //   title: "Crypto Guru",
+  //   date: "jun 2024- feb 2024",
+  //   description:
+  //   "I developed a dynamic cryptocurrency web application leveraging React and Rapid API, enabling real-time tracking of cryptocurrency prices and market trends. This project enhanced my skills in API integration and state management within React.",
+  //   image:
+  //     "https://github.com/Surajtalole/img/blob/main/crypto.png?raw=true",
+  //   tags: ["React Js", "Javascript","CSS"],
+  //   category: "react js",
+  //   github: "https://github.com/Surajtalole/Crypto-Guru",
     
    
-  },
-  {
-    id: 5,
-    title: "News Guru",
-    date: "May 2023- April 2023",
-    description:
-"I developed a dynamic news website using React.js and Rapid API, providing users with real-time news updates. The site features responsive design and seamless integration of various news sources for a comprehensive news experience.",
- image:
-      "https://shrikantj0794.netlify.app/images/newsapi.JPG",
-    tags: ["React Js", "Javascript","CSS"],
-    category: "react js",
-    github: "https://github.com/Surajtalole/News-Guru",
+  // },
+//   {
+//     id: 5,
+//     title: "News Guru",
+//     date: "May 2023- April 2023",
+//     description:
+// "I developed a dynamic news website using React.js and Rapid API, providing users with real-time news updates. The site features responsive design and seamless integration of various news sources for a comprehensive news experience.",
+//  image:
+//       "https://shrikantj0794.netlify.app/images/newsapi.JPG",
+//     tags: ["React Js", "Javascript","CSS"],
+//     category: "react js",
+//     github: "https://github.com/Surajtalole/News-Guru",
     
    
-  },
-  {
-    id: 6,
-    title: "PDF Merger",
-    date: "May 2023",
-    description:
-    "I developed a dynamic news website using React.js for the frontend and Node.js for the backend, seamlessly integrating with an API to fetch and display real-time news articles. The site provides users with the latest news updates, categorized content, and a responsive design for an optimal browsing experience across devices.",
- image:
-      "https://www.cisdem.com/media/upload/2022/08/16/combine-pdf.png",
-    tags: ["React Js","Node Js", "Javascript","CSS"],
-    category: "react js",
-    github: "https://github.com/Surajtalole/PDF-Merger",
+//   },
+//   {
+//     id: 6,
+//     title: "PDF Merger",
+//     date: "May 2023",
+//     description:
+//     "I developed a dynamic news website using React.js for the frontend and Node.js for the backend, seamlessly integrating with an API to fetch and display real-time news articles. The site provides users with the latest news updates, categorized content, and a responsive design for an optimal browsing experience across devices.",
+//  image:
+//       "https://www.cisdem.com/media/upload/2022/08/16/combine-pdf.png",
+//     tags: ["React Js","Node Js", "Javascript","CSS"],
+//     category: "react js",
+//     github: "https://github.com/Surajtalole/PDF-Merger",
     
    
-  },
-  {
-    id: 7,
-    title: "Text Utils",
-    date: "Feb 2023",
-    description:
-    "Easily format and style your text—capitalize, highlight, or no of words. React.js ensures a dynamic and user-friendly text manipulation experience.",
- image:
-      "https://shrikantj0794.netlify.app/images/textutisapp.JPG",
-    tags: ["React Js","Javascript","CSS"],
-    category: "react js",
-    github: "https://github.com/Surajtalole/TextUtils-React",
+//   },
+//   {
+//     id: 7,
+//     title: "Text Utils",
+//     date: "Feb 2023",
+//     description:
+//     "Easily format and style your text—capitalize, highlight, or no of words. React.js ensures a dynamic and user-friendly text manipulation experience.",
+//  image:
+//       "https://shrikantj0794.netlify.app/images/textutisapp.JPG",
+//     tags: ["React Js","Javascript","CSS"],
+//     category: "react js",
+//     github: "https://github.com/Surajtalole/TextUtils-React",
     
-  },
+//   },
   
 ];
 

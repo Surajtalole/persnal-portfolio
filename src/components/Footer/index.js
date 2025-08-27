@@ -103,7 +103,7 @@ function Footer() {
           <SocialMediaIcon href={Bio.insta} target="display"><InstagramIcon /></SocialMediaIcon>
         </SocialMediaIcons>
         <Copyright>
-          &copy; 2024 Suraj Talole.
+          &copy; 2025 Suraj Talole.
         </Copyright>
 
       </FooterWrapper>
