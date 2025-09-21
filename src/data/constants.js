@@ -9,7 +9,7 @@ export const Bio = {
     "Full Stack Developer (MERN Stack) with 1.5 years of experience in delivering production-ready web and mobile applications. Skilled in React.js, React Native, Node.js, Express.js, SQL, and MongoDB with proven expertise in API optimization, responsive UI development, and app store publishing. Recognized for delivering scalable solutions that improve system efficiency in Agile environments.",
   github: "https://github.com/Surajtalole",
   resume:
-    "https://drive.google.com/file/d/1_KPHMjfIqLgZg9lIfuzVBsY1sQzd5EqM/view?usp=drive_link",
+    "https://drive.google.com/file/d/1G4zYn4et7miGp6O3XB3dzhemXY3bMFDM/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/surajtalole/",
   insta: "https://www.instagram.com/suraj_talole/",
  
@@ -24,11 +24,7 @@ export const skills = [
       //   image:
       //     "https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_960_720.png",
       // },
-      // {
-      //   name: "Redux",
-      //   image:
-      //     "https://d33wubrfki0l68.cloudfront.net/0834d0215db51e91525a25acf97433051f280f2f/c30f5/img/redux.svg",
-      // },
+      
       {
         name: "Next Js",
         image:
@@ -39,6 +35,11 @@ export const skills = [
         name: "React Native",
         image:
           "https://4409803.fs1.hubspotusercontent-na1.net/hubfs/4409803/react-native%20%281%29.png",
+      },
+      {
+        name: "Redux",
+        image:
+          "https://d33wubrfki0l68.cloudfront.net/0834d0215db51e91525a25acf97433051f280f2f/c30f5/img/redux.svg",
       },
       {
         name: "HTML5",
@@ -100,9 +101,14 @@ export const skills = [
       },
      
       {
-        name: "Java",
+        name: "WebSockets",
         image:
-          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkCCdLCDhY7mwKXP4bHVQ1SFZxn3pPM2QLFw&s",
+          "https://miro.medium.com/1*4BtGcPz3JauG9qsNXzLMXA.gif",
+      },
+        {
+        name: "JWT",
+        image:
+          "https://cdn.prod.website-files.com/62d9b9c78f111f03f778e150/68625321c02c1ec83986a66f_jwt%20tokens.png",
       },
       {
         name: "MySQL",
@@ -154,6 +160,16 @@ export const skills = [
         image:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfZYisM7kdYMiF96V0d4Y5QEtAOopmWWCsaw&s"
       },
+      {
+        name: "Android Studio",
+        image:
+        "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/android-studio-icon.png"
+      },
+        {
+        name: "XCode",
+        image:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPE69SFNIWcmqMOVlPvSolhPhLHYVbJkuSiA&s"
+      },
        {
         name: "Google Play Store",
         image:
@@ -174,7 +190,7 @@ export const experiences = [
     img: "https://digitalcreations.co.in/wp-content/uploads/2021/07/Digital-Creations-I.T.-Support-Servives-Logo-Favicon-1.jpg",
     role: "Full Stack Developer",
     company: "Digital Creations",
-    date: "Dec 2024 - Present",
+    date: "June 2024 - Present",
     desc: "Integrated REST APIs and developed responsive, cross-platform UIs for web and mobile applications, improving feature delivery speed by 30% and reducing UI-related bugs by 25%.Optimized front-end performance and scalability across multiple platforms, resulting in 20% faster load times and enhancing overall user engagement by 15%.Independently published 2 mobile apps on Google Play Store and Apple App Store, ensuring compliance with guidelines and enabling timely product launches.",
     skills: [
       "HTML5",
@@ -188,37 +204,45 @@ export const experiences = [
       "Node Js",
       "Express js",
       "MongoDB",
+      "Electron",
+      "Redux",
+      "RESTful APIs", 
+      "WebSockets",
+       "Socket.IO",
+        "JWT ",
+        "Webpack",
+         "Vite",
       "Figma",
       "Git & GitHub"
       
      
     ],
   },
-  {
-    id: 1,
-    img: "https://media.licdn.com/dms/image/v2/D560BAQEGGS6VpW5YMQ/company-logo_200_200/company-logo_200_200/0/1733820408321/yahshua_software_limited_logo?e=2147483647&v=beta&t=UjOjBiX1nVDFM3o5RiRVxshNv_pqwSr-StoVCq2qX1g",
-    role: "Full Stack Developer",
-    company: "Yahshua Marketing Limited",
-    date: "Aug 2024 - Dec 2024",
-    desc: "Engineered full-stack applications with React.js, React Native, Node.js,Express.js, and MongoDB, improving feature delivery by 35% .Streamlined backend API architecture, reducing response time by 40% and boosting customer satisfaction by 25%.",
-   skills: [
-      "HTML5",
-      "CSS",
-      "Tailwind CSS",
-      "JavaScript",
-      "TypeScript",
-      "React.js",
-      "Next.js",
-      "React Native",
-      "Node Js",
-      "Express js",
-      "MongoDB",
-      "Figma",
-      "Git & GitHub"
+  // {
+  //   id: 1,
+  //   img: "https://media.licdn.com/dms/image/v2/D560BAQEGGS6VpW5YMQ/company-logo_200_200/company-logo_200_200/0/1733820408321/yahshua_software_limited_logo?e=2147483647&v=beta&t=UjOjBiX1nVDFM3o5RiRVxshNv_pqwSr-StoVCq2qX1g",
+  //   role: "Full Stack Developer",
+  //   company: "Yahshua Marketing Limited",
+  //   date: "Aug 2024 - Dec 2024",
+  //   desc: "Engineered full-stack applications with React.js, React Native, Node.js,Express.js, and MongoDB, improving feature delivery by 35% .Streamlined backend API architecture, reducing response time by 40% and boosting customer satisfaction by 25%.",
+  //  skills: [
+  //     "HTML5",
+  //     "CSS",
+  //     "Tailwind CSS",
+  //     "JavaScript",
+  //     "TypeScript",
+  //     "React.js",
+  //     "Next.js",
+  //     "React Native",
+  //     "Node Js",
+  //     "Express js",
+  //     "MongoDB",
+  //     "Figma",
+  //     "Git & GitHub"
       
      
-    ],
-  },
+  //   ],
+  // },
   {
     id: 2,
     img: "https://variantspark.com/images/portfolio/varientspark.jpg",
