@@ -1,0 +1,377 @@
+/* ==========================================================================
+   Design system — Dark Editorial
+   ========================================================================== */
+:root {
+  --bg: #0a0a0a;
+  --bg-2: #111111;
+  --card: #171717;
+  --text: #f5f3ef;
+  --text-2: #c9c6c0;
+  --muted: #929292;
+  --accent: #ff6b35;
+  --border: #292929;
+  --border-2: #3a3a3a;
+
+  --font-display: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  --gutter: clamp(16px, 3.4vw, 52px);
+  --max: 1480px;
+  --nav-h: 76px;
+
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-io: cubic-bezier(0.65, 0, 0.35, 1);
+
+  color-scheme: dark;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  background: var(--bg);
+}
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+img,
+svg,
+canvas {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--bg);
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+[tabindex="-1"]:focus {
+  outline: none;
+}
+
+/* ---------- Utilities ---------- */
+.container {
+  width: 100%;
+  max-width: var(--max);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.skip-link {
+  position: fixed;
+  top: -100px;
+  left: 12px;
+  z-index: 1000;
+  padding: 10px 16px;
+  background: var(--accent);
+  color: var(--bg);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  transition: top 0.3s var(--ease);
+}
+
+.skip-link:focus {
+  top: 12px;
+}
+
+.label {
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.accent {
+  color: var(--accent);
+}
+
+.mask {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: top;
+  padding-bottom: 0.1em;
+  margin-bottom: -0.1em;
+}
+
+.mask > span {
+  display: inline-block;
+  will-change: transform;
+}
+
+/* ---------- Sections ---------- */
+.section {
+  position: relative;
+  padding-block: clamp(100px, 13vw, 190px);
+}
+
+/* Tighter vertical rhythm for dense sections */
+.section--compact {
+  padding-block: clamp(64px, 7.5vw, 112px);
+}
+
+.section--compact .shead {
+  margin-bottom: clamp(36px, 4.5vw, 64px);
+}
+
+.section--compact .shead__title {
+  font-size: clamp(30px, 3.8vw, 58px);
+}
+
+.section--alt {
+  background: var(--bg-2);
+}
+
+section[id] {
+  scroll-margin-top: 0;
+}
+
+/* Editorial section header: label rail + headline */
+.shead {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  column-gap: var(--gutter);
+  row-gap: 28px;
+  margin-bottom: clamp(56px, 7vw, 110px);
+}
+
+.shead__label {
+  grid-column: 1 / span 3;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  align-self: start;
+  padding-top: 0.9em;
+}
+
+.shead__label::before {
+  content: "";
+  width: 28px;
+  height: 1px;
+  background: var(--accent);
+}
+
+.shead__label b {
+  color: var(--text);
+  font-weight: 400;
+}
+
+.shead__title {
+  grid-column: 4 / -1;
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: clamp(32px, 4.4vw, 68px);
+  line-height: 1.02;
+  letter-spacing: -0.045em;
+  max-width: 14ch;
+}
+
+@media (max-width: 900px) {
+  .shead__label,
+  .shead__title {
+    grid-column: 1 / -1;
+  }
+
+  .shead__label {
+    padding-top: 0;
+  }
+}
+
+/* ---------- Buttons ---------- */
+.btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  height: 54px;
+  padding: 0 26px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--bg);
+  background: var(--text);
+  overflow: hidden;
+  isolation: isolate;
+  transition: color 0.45s var(--ease);
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: var(--accent);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.6s var(--ease);
+}
+
+.btn:hover::before,
+.btn:focus-visible::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.btn svg {
+  font-size: 16px;
+  transition: transform 0.5s var(--ease);
+}
+
+.btn:hover svg {
+  transform: translate(3px, -3px);
+}
+
+.btn--down:hover svg {
+  transform: translateY(3px);
+}
+
+.btn--line {
+  background: transparent;
+  color: var(--text);
+  box-shadow: inset 0 0 0 1px var(--border-2);
+}
+
+.btn--line:hover,
+.btn--line:focus-visible {
+  color: var(--bg);
+}
+
+/* Text link with an accent underline that draws in */
+.ulink {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: color 0.35s;
+}
+
+.ulink::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -3px;
+  height: 1px;
+  background: var(--accent);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.55s var(--ease);
+}
+
+.ulink:hover,
+.ulink:focus-visible {
+  color: var(--text);
+}
+
+.ulink:hover::after,
+.ulink:focus-visible::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* Rolling label: duplicate line slides up on hover (accent copy) */
+.roll {
+  display: inline-block;
+  height: 1.3em;
+  line-height: 1.3;
+  overflow: hidden;
+  vertical-align: top;
+}
+
+.roll > span {
+  display: block;
+  transition: transform 0.55s var(--ease);
+}
+
+.roll > span:last-child {
+  color: var(--accent);
+}
+
+a:hover > .roll > span,
+a:focus-visible > .roll > span {
+  transform: translateY(-100%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
