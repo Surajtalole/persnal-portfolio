@@ -19,6 +19,7 @@ import {
 import { AiOutlineApi, AiOutlineSearch } from "react-icons/ai";
 import { HiOutlineSparkles } from "react-icons/hi";
 import { BsCursor, BsChatDots } from "react-icons/bs";
+import { FiLayout, FiPenTool, FiGrid } from "react-icons/fi";
 
 /** Monochrome brand glyphs keyed by a normalised technology name. */
 const ICONS = {
@@ -45,6 +46,9 @@ const ICONS = {
   cursor: BsCursor,
   promptengineering: BsChatDots,
   aiforseocontent: AiOutlineSearch,
+  uiuxdesign: FiLayout,
+  graphicdesign: FiPenTool,
+  wireframingprototyping: FiGrid,
 };
 
 export const normalise = (name = "") => name.toLowerCase().replace(/[^a-z0-9]/g, "");

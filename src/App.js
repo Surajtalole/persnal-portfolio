@@ -1,7 +1,6 @@
 import React from "react";
 import { MotionConfig } from "framer-motion";
 import { ScrollContext, useLenis } from "./lib/smoothScroll";
-import Intro from "./components/Intro/Intro";
 import Nav from "./components/Nav/Nav";
 import Hero from "./components/Hero/Hero";
 import About from "./components/About/About";
@@ -10,7 +9,6 @@ import Experience from "./components/Experience/Experience";
 import Work from "./components/Work/Work";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
-import Cursor from "./components/Cursor/Cursor";
 
 export default function App() {
   const lenis = useLenis();
@@ -21,7 +19,6 @@ export default function App() {
         <a href="#main" className="skip-link">
           Skip to content
         </a>
-        <Intro />
         <Nav />
         <main id="main">
           <Hero />
@@ -32,7 +29,6 @@ export default function App() {
           <Contact />
         </main>
         <Footer />
-        <Cursor />
       </MotionConfig>
     </ScrollContext.Provider>
   );

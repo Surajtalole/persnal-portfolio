@@ -195,7 +195,11 @@ export const expertise = [
   },
   { title: "Backend", items: ["Node.js", "Express.js", "REST APIs"] },
   { title: "Database", items: ["MongoDB", "MySQL"] },
-  { title: "Tools", items: ["Git", "GitHub", "Postman", "Figma", "VS Code"] },
+  {
+    title: "Design",
+    items: ["Figma", "UI / UX Design", "Graphic Design", "Wireframing & Prototyping"],
+  },
+  { title: "Tools", items: ["Git", "GitHub", "Postman", "VS Code"] },
   {
     title: "AI",
     items: ["ChatGPT", "Claude AI", "Cursor", "Prompt Engineering", "AI for SEO & Content"],
@@ -216,12 +220,12 @@ export const experiences = [
       "Build and maintain the EventBazaar.com website, the public-facing platform customers use to discover and book event services.",
       "Develop the admin panel the internal team uses to run and manage the platform day to day.",
       "Work on the EventBazaar mobile app, keeping it aligned with the web experience.",
-      "Use AI tools — ChatGPT, Claude AI and Cursor — every day to build, debug and review code across the website, admin panel and app.",
+      "Use AI tools like ChatGPT, Claude AI and Cursor every day to build, debug and review code across the website, admin panel and app.",
       "Support the wider product beyond these core areas, picking up frontend work wherever it is needed.",
     ],
     achievements: [
-      "Delivered frontend features across three products — the website, the admin panel and the mobile app — keeping the experience consistent across all of them.",
-      "Took on SEO for EventBazaar.com, using AI to draft and optimise page content, meta titles and descriptions and to support keyword research — alongside improvements to content structure and page performance.",
+      "Delivered frontend features across three products (the website, the admin panel and the mobile app), keeping the experience consistent across all of them.",
+      "Took on SEO for EventBazaar.com, using AI to draft and optimise page content, meta titles and descriptions and to support keyword research, alongside improvements to content structure and page performance.",
       "Built the admin panel that gives the team one place to manage the platform, alongside the customer-facing site.",
       "Made AI-assisted development part of everyday work, using ChatGPT, Claude AI and Cursor to move faster across all three products while keeping code review and UX decisions hands-on.",
     ],
@@ -333,7 +337,7 @@ export const projects = [
     title: "EventBazaar.com - Event Services Platform",
     date: "Dec 2025 - Present",
     description:
-      "EventBazaar.com is the platform where customers discover and book event services. As a frontend developer I work across the public website, the admin panel the team uses to manage the platform, the mobile app and the site's SEO — using AI tools to speed up development and to optimise page content and metadata for search.",
+      "EventBazaar.com is the platform where customers discover and book event services. As a frontend developer I work across the public website, the admin panel the team uses to manage the platform, the mobile app and the site's SEO, using AI tools to speed up development and to optimise page content and metadata for search.",
     image: "",
     // What I work on in this project (shown as "Scope")
     scope: ["Website", "Admin panel", "Mobile app", "SEO", "AI-assisted content & development"],

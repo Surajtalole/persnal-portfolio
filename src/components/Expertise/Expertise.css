@@ -17,7 +17,14 @@
   grid-column: 10 / span 3;
 }
 
-.stack__group--tools,
+.stack__group--design {
+  grid-column: 1 / span 6;
+}
+
+.stack__group--tools {
+  grid-column: 7 / -1;
+}
+
 .stack__group--ai {
   grid-column: 1 / -1;
 }
@@ -59,7 +66,12 @@
   column-gap: var(--gutter);
 }
 
-.stack__group--tools .stack__list,
+.stack__group--design .stack__list,
+.stack__group--tools .stack__list {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: var(--gutter);
+}
+
 .stack__group--ai .stack__list {
   grid-template-columns: repeat(5, minmax(0, 1fr));
   column-gap: var(--gutter);
@@ -134,6 +146,7 @@
 }
 
 /* Tools + AI render as vertical tiles */
+.stack__group--design .tech,
 .stack__group--tools .tech,
 .stack__group--ai .tech {
   flex-direction: column;
@@ -142,6 +155,7 @@
   padding: 22px 0;
 }
 
+.stack__group--design .tech__n,
 .stack__group--tools .tech__n,
 .stack__group--ai .tech__n {
   position: absolute;
@@ -166,7 +180,6 @@
     grid-column: 7 / -1;
   }
 
-  .stack__group--tools .stack__list,
   .stack__group--ai .stack__list {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -174,7 +187,9 @@
 
 @media (max-width: 640px) {
   .stack__group--backend,
-  .stack__group--database {
+  .stack__group--database,
+  .stack__group--design,
+  .stack__group--tools {
     grid-column: 1 / -1;
   }
 
@@ -187,6 +202,7 @@
     grid-template-columns: 1fr 1fr;
   }
 
+  .stack__group--design .tech,
   .stack__group--tools .tech,
   .stack__group--ai .tech {
     gap: 24px;

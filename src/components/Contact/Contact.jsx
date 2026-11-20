@@ -108,7 +108,7 @@ export default function Contact() {
           <div className="contact__side">
             <Reveal as="p" className="contact__lede">
               Open to full-time roles, freelance builds and interesting collaborations. Tell me what you&rsquo;re
-              working on &mdash; I reply to every message personally.
+              working on. I reply to every message personally.
             </Reveal>
             <ul className="channels">
               {channels.map((c, i) => (
@@ -185,7 +185,7 @@ export default function Contact() {
                 <AnimatePresence mode="wait">
                   {status === "success" && (
                     <motion.p key="ok" className="notice notice--ok" initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }}>
-                      <FiCheck aria-hidden="true" /> Thank you &mdash; your message has been sent. I&rsquo;ll get back to
+                      <FiCheck aria-hidden="true" /> Thank you, your message has been sent. I&rsquo;ll get back to
                       you soon.
                     </motion.p>
                   )}

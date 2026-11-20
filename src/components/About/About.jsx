@@ -4,10 +4,10 @@ import { Reveal, SectionHead } from "../motion/Motion";
 import "./About.css";
 
 const PHILOSOPHY = [
-  ["Problem before stack", "I start with who is using the product and what slows them down — tools come second."],
+  ["Problem before stack", "I start with who is using the product and what slows them down. Tools come second."],
   ["Own the whole feature", "Comfortable on both sides of the API, so work lands complete rather than half-wired."],
   ["Ship, then refine", "Get a working slice out early, measure it, then polish the details people actually feel."],
-  ["AI as a multiplier", "I use ChatGPT, Claude and Cursor for the repetitive parts — scaffolding, debugging, content and SEO drafts — and keep my own judgement on architecture, UX and code review."],
+  ["AI as a multiplier", "I use ChatGPT, Claude and Cursor for the repetitive parts (scaffolding, debugging, content and SEO drafts) and keep my own judgement on architecture, UX and code review."],
 ];
 
 export default function About() {
@@ -20,8 +20,8 @@ export default function About() {
     ["Currently", `${currentRole.role}, ${currentRole.company}`],
     ["Since", since(currentRole)],
     previous && ["Previously", `${previous.role}, ${previous.company}`],
-    degree && ["Education", `B.Tech, Information Technology — ${degree.date.split("-").pop().trim()}`],
-    ["Interests", "Frontend architecture · AI-assisted development · Cross-platform mobile apps · SEO"],
+    degree && ["Education", `B.Tech, Information Technology, ${degree.date.split("-").pop().trim()}`],
+    ["Interests", "Full stack development · UI & graphic design · AI-assisted development · Cross-platform mobile apps · SEO"],
   ].filter(Boolean);
 
   return (
@@ -37,7 +37,7 @@ export default function About() {
         <div className="about__grid">
           <div className="about__copy">
             <Reveal as="p" className="about__lead">
-              I&rsquo;m {Bio.name.split(" ")[0]} &mdash; a full stack developer from {Bio.location} who enjoys the
+              I&rsquo;m {Bio.name.split(" ")[0]}, a full stack developer from {Bio.location} who enjoys the
               whole life of a product, from the first database table to the last hover state.
             </Reveal>
 
@@ -45,13 +45,15 @@ export default function About() {
               <Reveal as="p" delay={0.05}>
                 I studied Information Technology{degree ? ` at ${degree.school.trim()}` : ""}
                 {degree ? `, graduating in ${degree.date.split("-").pop().trim().split(" ").pop()}` : ""}, and went
-                straight into building production software for real users.
+                straight into building production software for real users. Alongside code I design UI
+                layouts, wireframes and prototypes in Figma, plus graphic design, so I can take an idea from
+                first sketch to shipped screen.
               </Reveal>
               <Reveal as="p" delay={0.1}>
                 {previous &&
                   `From ${since(previous)} to ${previous.date.split("-").pop().trim()} I was a ${previous.role.toLowerCase()} at ${previous.company}, building cross-platform web and mobile apps and taking two of them through Play Store and App Store review myself. `}
                 Since {since(currentRole)} I&rsquo;ve been a {currentRole.role.toLowerCase()} at {currentRole.company},
-                where AI tools are part of my daily workflow &mdash; from writing and reviewing code to optimising the
+                where AI tools are part of my daily workflow, from writing and reviewing code to optimising the
                 site&rsquo;s content for search.
               </Reveal>
             </div>
