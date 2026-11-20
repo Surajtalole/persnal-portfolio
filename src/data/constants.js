@@ -12,6 +12,9 @@ export const Bio = {
     "https://drive.google.com/file/d/1G4zYn4et7miGp6O3XB3dzhemXY3bMFDM/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/surajtalole/",
   insta: "https://www.instagram.com/suraj_talole/",
+  // Public contact email shown on the site. Leave empty to hide email links.
+  email: "",
+  location: "India",
  
 };
 
@@ -176,7 +179,7 @@ export const skills = [
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb5LOPUgzjbz_m4aVulC-GU5zu-30HBdYnAg&s"
       },
        {
-        name: "Apple App Store,",
+        name: "Apple App Store",
         image:
         "https://developer.apple.com/assets/elements/icons/app-store-s/app-store-s-256x256_2x.png"
       },
@@ -184,14 +187,63 @@ export const skills = [
   },
 ];
 
+// Categorised stack shown in the Expertise section.
+export const expertise = [
+  {
+    title: "Frontend",
+    items: ["React.js", "React Native", "Next.js", "JavaScript", "TypeScript", "HTML", "CSS"],
+  },
+  { title: "Backend", items: ["Node.js", "Express.js", "REST APIs"] },
+  { title: "Database", items: ["MongoDB", "MySQL"] },
+  { title: "Tools", items: ["Git", "GitHub", "Postman", "Figma", "VS Code"] },
+  {
+    title: "AI",
+    items: ["ChatGPT", "Claude AI", "Cursor", "Prompt Engineering", "AI for SEO & Content"],
+  },
+];
+
 export const experiences = [
+  {
+    id: 4,
+    img: "",
+    role: "Frontend Developer",
+    company: "EventBazaar.com",
+    date: "Dec 2025 - Present",
+    desc: "",
+    // Optional explicit lists. When present they are shown as-is;
+    // otherwise sentences are taken from `desc`.
+    responsibilities: [
+      "Build and maintain the EventBazaar.com website, the public-facing platform customers use to discover and book event services.",
+      "Develop the admin panel the internal team uses to run and manage the platform day to day.",
+      "Work on the EventBazaar mobile app, keeping it aligned with the web experience.",
+      "Use AI tools — ChatGPT, Claude AI and Cursor — every day to build, debug and review code across the website, admin panel and app.",
+      "Support the wider product beyond these core areas, picking up frontend work wherever it is needed.",
+    ],
+    achievements: [
+      "Delivered frontend features across three products — the website, the admin panel and the mobile app — keeping the experience consistent across all of them.",
+      "Took on SEO for EventBazaar.com, using AI to draft and optimise page content, meta titles and descriptions and to support keyword research — alongside improvements to content structure and page performance.",
+      "Built the admin panel that gives the team one place to manage the platform, alongside the customer-facing site.",
+      "Made AI-assisted development part of everyday work, using ChatGPT, Claude AI and Cursor to move faster across all three products while keeping code review and UX decisions hands-on.",
+    ],
+    skills: [],
+  },
    {
     id: 0,
     img: "https://digitalcreations.co.in/wp-content/uploads/2021/07/Digital-Creations-I.T.-Support-Servives-Logo-Favicon-1.jpg",
     role: "Full Stack Developer",
     company: "Digital Creations",
-    date: "June 2024 - Present",
+    date: "June 2024 - Nov 2025",
     desc: "Integrated REST APIs and developed responsive, cross-platform UIs for web and mobile applications, improving feature delivery speed by 30% and reducing UI-related bugs by 25%.Optimized front-end performance and scalability across multiple platforms, resulting in 20% faster load times and enhancing overall user engagement by 15%.Independently published 2 mobile apps on Google Play Store and Apple App Store, ensuring compliance with guidelines and enabling timely product launches.",
+    responsibilities: [
+      "Integrated REST APIs and built responsive, cross-platform interfaces for web and mobile applications.",
+      "Optimised front-end performance and scalability across multiple platforms.",
+      "Owned app store releases end to end, from guideline compliance to launch.",
+    ],
+    achievements: [
+      "Sped up feature delivery by 30% and cut UI-related bugs by 25% through API integration and responsive, cross-platform UI work.",
+      "Made pages load 20% faster and lifted user engagement by 15% with front-end performance and scalability improvements.",
+      "Independently published 2 mobile apps on the Google Play Store and Apple App Store, launching both on schedule.",
+    ],
     skills: [
       "HTML5",
       "CSS",
@@ -209,7 +261,7 @@ export const experiences = [
       "RESTful APIs", 
       "WebSockets",
        "Socket.IO",
-        "JWT ",
+        "JWT",
         "Webpack",
          "Vite",
       "Figma",
@@ -243,43 +295,6 @@ export const experiences = [
      
   //   ],
   // },
-  {
-    id: 2,
-    img: "https://variantspark.com/images/portfolio/varientspark.jpg",
-    role: "React Js Intern",
-    company: "Variant Spark",
-    date: "Jun 2023 - Dec 2023",
-    desc: "During my 6-month React.js internship, I developed dynamic and responsive web applications, enhancing user interfaces and integrating RESTful APIs to improve overall functionality and user experience.",
-    skills: [
-      "HTML5",
-      "CSS",
-      "Tailwind CSS",
-      "JavaScript",
-      "TypeScript",
-      "React.js",
-      "Next.js",
-      "Figma",
-      "Git & GitHub"
-      
-     
-    ],
-  },
-  {
-    id: 3,
-    img: "https://suvidhafoundationedutech.org/img/SuvidhaLogo.png",
-    role: "Frontend Developer Intern",
-    company: "Suvidha Foundation",
-    date: "Dec 2022 - Jan 2023",
-    desc: "Working on the frontend of the web application using HTML,CSS & Javascript.",
-    skills: [
-      "HTML%",
-      "CSS",
-     
-      "JavaScript",
-    ],
-    // doc: "https://firebasestorage.googleapis.com/v0/b/buckoid-917cf.appspot.com/o/Screenshot%20from%202023-05-28%2023-20-46.png?alt=media&token=5570f995-e8f4-4f12-bb2f-73bcf4b20730",
-  },
- 
 ];
 
 export const education = [
@@ -314,8 +329,22 @@ export const education = [
 
 export const projects = [
   {
+    id: 11,
+    title: "EventBazaar.com - Event Services Platform",
+    date: "Dec 2025 - Present",
+    description:
+      "EventBazaar.com is the platform where customers discover and book event services. As a frontend developer I work across the public website, the admin panel the team uses to manage the platform, the mobile app and the site's SEO — using AI tools to speed up development and to optimise page content and metadata for search.",
+    image: "",
+    // What I work on in this project (shown as "Scope")
+    scope: ["Website", "Admin panel", "Mobile app", "SEO", "AI-assisted content & development"],
+    // Add the technologies used here to show a "Stack" line
+    tags: [],
+    category: "web app",
+    webapp: "https://eventbazaar.com/",
+  },
+  {
     id: 9,
-    title: "Etable - Restro Manager|Dine-in & Booking",
+    title: "Etable - Restro Manager | Dine-in & Booking",
     date: "March 2024 - Present",
     description:
       "The Cloud-Based Software for your restaurants with full Management and Operational Control.Real-time Order Management, Accessible Anytime, Anywhere, on Any Device – with Seamless Third-Party Integrations and Instant Updates via Email, SMS, and In-App Notifications.",
@@ -338,7 +367,7 @@ export const projects = [
   },
    {
     id: 10,
-    title: "Bridge - Sports Academy Management App ",
+    title: "Bridge - Sports Academy Management App",
     date: "Dec 2024 - March 2025",
     description:
       "Bridge is the ultimate platform connecting students with top sports academies. Whether you're an aspiring athlete or a coach looking for talent, Bridge helps you discover training programs, track progress, and connect with experts to enhance your sports journey.",
@@ -351,7 +380,7 @@ export const projects = [
       
       "React Native",
       "Node Js",
-      "Expres js",
+      "Express js",
       "Mongo DB",
       "HTML5",
       "Tailwind CSS",
@@ -364,45 +393,6 @@ export const projects = [
     category: "mern stack",
     // github: "https://github.com/Surajtalole/MERN-Ecommerce-WebApp",
     webapp: "https://play.google.com/store/apps/details?id=com.BridgeSolution.Bridge",
-  },
-  {
-    id: 0,
-    title: "Uniscreen AI Platform",
-    date: "Jan 2024 - May 2024",
-    description:
-    "Engineered a full stack AI application using JavaScript, Next.js, PostgreSQL, Prisma, Stripe, and OpenAI API, delivering functionalities such as code generation, image generation, music generation, video generation, and conversational AI capabilities.",
-  image:
-      "https://github.com/Surajtalole/img/blob/main/U1.png?raw=true",
-    tags: ["React Js", "Next Js","Typescript","Tailwind CSS","PostgreSQL","Prisma","Strip","OpenAI"],
-    category: "next js",
-    github: "https://github.com/Surajtalole/Uniscreen-AI-Plathform",
-   
-    member: [
-      {
-        name: "Suraj Talole",
-        img: "http://localhost:3000/static/media/HeroImage.a5e2295f16626dd716d2.jpg",
-        linkedin: "https://www.linkedin.com/in/surajtalole/",
-        
-      },
-      {
-        name: "Shrikant Jamale",
-        img: "https://media.licdn.com/dms/image/C5603AQHGSKYTV5zmQw/profile-displayphoto-shrink_200_200/0/1648898463296?e=2147483647&v=beta&t=sCYpsQTcjiCQwXNEahLq4gIIJ1cV6TvhHZlwn_KUgQ0",
-        linkedin: "https://www.linkedin.com/in/shrikant-jamale-18146a209/",
-        
-      },
-      {
-        name: "Purandar Dudhate",
-        img: "https://media.licdn.com/dms/image/D4D03AQH05eUWp4qr8Q/profile-displayphoto-shrink_200_200/0/1683198337328?e=2147483647&v=beta&t=GGoQJso_DJO7COYKqgaFZrPpq-R2aF4LzQeQsCK0ugg",
-        linkedin: "https://www.linkedin.com/in/purandar-dudhate-72268a229/",
-        
-      },
-      {
-        name: "Pratic Dokhale",
-        img: "https://media.licdn.com/dms/image/D4D03AQE8XpfvnJ84fw/profile-displayphoto-shrink_400_400/0/1687068337422?e=1727913600&v=beta&t=_-_6fpQfou15LHwzpbNgaFUfC5wet60PSv3ZHSn3bWE",
-        linkedin: "https://www.linkedin.com/in/pratik-dokhale-56a06122a/",
-        github: "https://github.com/Surajtalole",
-      },
-    ],
   },
  {
     id: 2,

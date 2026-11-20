@@ -1,0 +1,293 @@
+/* ---------- Bento grid ---------- */
+.work__grid {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: clamp(12px, 1.2vw, 18px);
+}
+
+.card--span-4 { grid-column: span 4; }
+.card--span-5 { grid-column: span 5; }
+.card--span-6 { grid-column: span 6; }
+.card--span-7 { grid-column: span 7; }
+.card--span-8 { grid-column: span 8; }
+.card--span-12 { grid-column: span 12; }
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 360px;
+  padding: clamp(20px, 2vw, 32px);
+  background: var(--card);
+  border: 1px solid var(--border);
+  overflow: hidden;
+  isolation: isolate;
+  /* translate (not transform) so it doesn't fight the reveal animation's inline transform */
+  transition: border-color 0.5s var(--ease), translate 0.6s var(--ease), background 0.5s;
+}
+
+.card:hover,
+.card:focus-within {
+  border-color: #3d3d3d;
+  translate: 0 -4px;
+}
+
+/* Accent line that draws across the top on hover */
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--accent);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.7s var(--ease);
+}
+
+.card:hover::before,
+.card:focus-within::before {
+  transform: scaleX(1);
+}
+
+/* Oversized index watermark */
+.card__bg-num {
+  position: absolute;
+  right: -0.04em;
+  bottom: -0.2em;
+  z-index: -1;
+  font-family: var(--font-display);
+  font-size: clamp(120px, 13vw, 220px);
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -0.06em;
+  color: #1d1d1d;
+  transition: color 0.6s var(--ease), transform 0.8s var(--ease);
+  pointer-events: none;
+}
+
+.card:hover .card__bg-num {
+  color: rgba(255, 107, 53, 0.14);
+  transform: translateY(-6px);
+}
+
+.card__top {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--border);
+}
+
+.card__main {
+  flex: 1;
+  padding-top: clamp(24px, 2.6vw, 40px);
+}
+
+.card__flag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 14px;
+  color: var(--text);
+}
+
+.card__flag::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.card__title {
+  font-family: var(--font-display);
+  font-size: clamp(26px, 2.4vw, 38px);
+  font-weight: 500;
+  line-height: 1.02;
+  letter-spacing: -0.04em;
+}
+
+.card--featured .card__title {
+  font-size: clamp(32px, 3.4vw, 54px);
+}
+
+.card__open {
+  color: inherit;
+  transition: color 0.35s;
+}
+
+.card:hover .card__open,
+.card__open:focus-visible {
+  color: var(--accent);
+}
+
+.card__tagline {
+  margin-top: 10px;
+  font-family: var(--font-display);
+  font-size: clamp(15px, 1.2vw, 18px);
+  color: var(--text-2);
+  letter-spacing: -0.01em;
+}
+
+.card__desc {
+  margin-top: 16px;
+  color: var(--muted);
+  font-size: 14.5px;
+  line-height: 1.65;
+  max-width: 58ch;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.card--featured .card__desc {
+  font-size: 15.5px;
+  -webkit-line-clamp: 4;
+}
+
+.card__foot {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 28px;
+}
+
+.card__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.card__chips li {
+  padding: 5px 10px;
+  border: 1px solid var(--border-2);
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  letter-spacing: 0.04em;
+  color: var(--text-2);
+  background: rgba(10, 10, 10, 0.4);
+}
+
+.card__chips-more {
+  color: var(--muted) !important;
+}
+
+.card__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 22px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+}
+
+.card__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  transition: color 0.3s;
+}
+
+.card__link:hover,
+.card__link:focus-visible {
+  color: var(--text);
+}
+
+.card__link--main {
+  color: var(--text);
+}
+
+.card__link svg {
+  transition: transform 0.45s var(--ease), color 0.3s;
+}
+
+.card__link:hover svg {
+  color: var(--accent);
+  transform: translate(2px, -2px);
+}
+
+/* Closing GitHub card */
+.card--more {
+  padding: 0;
+  background: transparent;
+  border-style: dashed;
+  border-color: var(--border-2);
+  min-height: 220px;
+}
+
+.card__more-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 24px;
+  height: 100%;
+  padding: clamp(20px, 2vw, 32px);
+}
+
+.card__more-title {
+  font-family: var(--font-display);
+  font-size: clamp(24px, 2.4vw, 38px);
+  font-weight: 500;
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+  max-width: 16ch;
+}
+
+.card__more-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  color: var(--text-2);
+}
+
+.card__more-cta svg {
+  transition: transform 0.5s var(--ease);
+}
+
+.card--more:hover .card__more-cta svg {
+  transform: rotate(45deg);
+  color: var(--accent);
+}
+
+@media (max-width: 1100px) {
+  .work__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .work__grid > .card {
+    grid-column: span 1;
+  }
+
+  .work__grid > .card--featured {
+    grid-column: 1 / -1;
+  }
+
+  /* With an odd number of regular cards, the archive card fills the last gap */
+  .work__grid > .card--more {
+    grid-column: span 1;
+  }
+}
+
+@media (max-width: 680px) {
+  .work__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    min-height: 0;
+  }
+
+  .card__bg-num {
+    font-size: 120px;
+  }
+}

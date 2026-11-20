@@ -1,0 +1,127 @@
+.about__grid {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  column-gap: var(--gutter);
+  row-gap: 72px;
+}
+
+.about__copy {
+  grid-column: 1 / span 7;
+}
+
+.about__lead {
+  font-family: var(--font-display);
+  font-size: clamp(24px, 2.6vw, 40px);
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  font-weight: 400;
+  max-width: 24ch;
+}
+
+.about__story {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--gutter);
+  margin-top: clamp(40px, 5vw, 64px);
+  color: var(--muted);
+  font-size: 15.5px;
+  line-height: 1.75;
+}
+
+.philosophy {
+  margin-top: clamp(56px, 7vw, 96px);
+}
+
+.philosophy__label {
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border);
+}
+
+.philosophy__item {
+  display: grid;
+  grid-template-columns: 64px 1fr;
+  gap: 16px;
+  padding-block: 24px;
+  border-bottom: 1px solid var(--border);
+}
+
+.philosophy__n {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--accent);
+  padding-top: 6px;
+}
+
+.philosophy__item h4 {
+  font-family: var(--font-display);
+  font-size: clamp(20px, 1.8vw, 26px);
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  transition: color 0.35s;
+}
+
+.philosophy__item:hover h4 {
+  color: var(--accent);
+}
+
+.philosophy__item p {
+  margin-top: 6px;
+  color: var(--muted);
+  font-size: 15px;
+  max-width: 50ch;
+}
+
+/* ---------- Side ---------- */
+.about__side {
+  grid-column: 9 / -1;
+  position: sticky;
+  top: calc(var(--nav-h) + 32px);
+  align-self: start;
+}
+
+.about__side-label {
+  padding-bottom: 16px;
+}
+
+.facts {
+  border-top: 1px solid var(--border-2);
+}
+
+.facts__row {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  gap: 16px;
+  padding-block: 16px;
+  border-bottom: 1px solid var(--border);
+}
+
+.facts__row dt {
+  padding-top: 3px;
+}
+
+.facts__row dd {
+  font-size: 15px;
+  color: var(--text-2);
+}
+
+@media (max-width: 1000px) {
+  .about__copy,
+  .about__side {
+    grid-column: 1 / -1;
+  }
+
+  .about__side {
+    position: static;
+  }
+}
+
+@media (max-width: 640px) {
+  .about__story {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .facts__row {
+    grid-template-columns: 96px 1fr;
+  }
+}
