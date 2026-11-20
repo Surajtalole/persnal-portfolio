@@ -35,7 +35,7 @@ export default function Hero() {
             <span className="hero__pulse" aria-hidden="true" /> Available for opportunities
           </p>
           <p className="label hero__band-right">
-            Based in {Bio.location} &mdash; <LocalTime /> IST
+            Based in {Bio.location} · <LocalTime /> IST
           </p>
         </motion.div>
 
@@ -62,9 +62,9 @@ export default function Hero() {
             </motion.div>
 
             <motion.p className="hero__intro" {...fade(0.8)}>
-              I build web and mobile products end to end &mdash; React and Next.js on the front, Node and Express
-              behind it, MongoDB and MySQL underneath, with AI tools like Claude, ChatGPT and Cursor built into how I
-              work. Currently shipping at {currentRole.company}.
+              I design and build web and mobile products end to end: UI and graphics in Figma, React and
+              Next.js on the front, Node and Express behind it, with AI tools like Claude, ChatGPT and Cursor built
+              into how I work. Currently shipping at {currentRole.company}.
             </motion.p>
 
             <motion.div className="hero__ctas" {...fade(0.9)}>

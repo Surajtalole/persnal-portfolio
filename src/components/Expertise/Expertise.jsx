@@ -6,11 +6,12 @@ import { EASE, Reveal, SectionHead } from "../motion/Motion";
 import "./Expertise.css";
 
 const NOTES = {
-  Frontend: "Interfaces for web and mobile — component systems, state, responsive layouts.",
+  Frontend: "Interfaces for web and mobile: component systems, state and responsive layouts.",
   Backend: "Services and APIs that keep the interface honest.",
   Database: "Document and relational data, modelled for the product.",
-  Tools: "Version control, API testing and design hand-off.",
-  AI: "AI-assisted development and AI-powered SEO — used daily to build faster and sharpen content for search.",
+  Design: "Interface and visual design in Figma, from wireframes and prototypes to polished UI and graphics.",
+  Tools: "Version control, API testing and the editor I live in.",
+  AI: "AI-assisted development and AI-powered SEO, used daily to build faster and sharpen content for search.",
 };
 
 export default function Expertise() {
@@ -70,7 +71,7 @@ export default function Expertise() {
         </div>
 
         <Reveal as="p" className="stack__note label">
-          No skill bars, no percentages &mdash; just the stack I ship with.
+          No skill bars, no percentages. Just the stack I ship with.
         </Reveal>
       </div>
     </section>
