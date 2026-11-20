@@ -1,9 +1,7 @@
 import React from "react";
-import { motion } from "framer-motion";
 import { FiArrowUp } from "react-icons/fi";
 import { Bio } from "../../data/constants";
 import { NAV_LINKS } from "../Nav/Nav";
-import { EASE } from "../motion/Motion";
 import "./Footer.css";
 
 export default function Footer() {
@@ -14,7 +12,6 @@ export default function Footer() {
     { label: "Instagram", href: Bio.insta },
     Bio.email && { label: "Email", href: `mailto:${Bio.email}` },
   ].filter(Boolean);
-  const letters = Bio.name.split(" ").pop().toUpperCase().split("");
 
   return (
     <footer className="footer">
@@ -64,34 +61,6 @@ export default function Footer() {
             </span>
           </a>
         </div>
-
-        {/* <motion.p
-          className="footer__mark"
-          aria-hidden="true"
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true, margin: "0px 0px -5% 0px" }}
-          transition={{ staggerChildren: 0.06 }}
-        >
-          {letters.map((ch, i) => (
-            <span className="mask" key={i}>
-              <motion.span
-                className="footer__letter"
-                variants={{ hidden: { y: "105%" }, show: { y: "0%", transition: { duration: 1.1, ease: EASE } } }}
-              >
-                {ch}
-              </motion.span>
-            </span>
-          ))}
-          <span className="mask">
-            <motion.span
-              className="footer__letter accent"
-              variants={{ hidden: { y: "105%" }, show: { y: "0%", transition: { duration: 1.1, ease: EASE } } }}
-            >
-              .
-            </motion.span>
-          </span>
-        </motion.p> */}
 
         <div className="footer__bottom label">
           <span>
